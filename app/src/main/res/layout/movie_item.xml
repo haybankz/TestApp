@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="5dp"
+    android:elevation="10dp"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_poster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:elevation="0dp">
+
+            <ImageView
+                android:id="@+id/imageview_poster"
+                android:layout_width="140dp"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/cardview_poster"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:padding="14dp"
+            android:background="@color/white">
+
+
+            <TextView
+                android:id="@+id/textview_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_blue"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textSize="@dimen/movie_title_size"
+                tools:text="title"
+                />
+
+            <TextView
+                android:id="@+id/textview_overview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/light_blue"
+                android:textSize="@dimen/movie_overview_size"
+                android:maxLines="4"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"/>
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/cardview_poster"
+            android:layout_alignParentEnd="true"
+            android:paddingBottom="10dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/imageView_fav"
+                android:layout_width="28dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_favorite_border"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:id="@+id/textview_see_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_details"
+                android:textSize="@dimen/movie_view_detail_size"
+                android:textColor="@color/grey"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp" />
+
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

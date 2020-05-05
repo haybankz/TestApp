@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TestApp</string>
+    <string name="navigation_drawer_open">" Navigationsschublade öffnen"</string>
+    <string name="navigation_drawer_close">" Navigationsschublade schließen"</string>
+    <string name="menu_home">" Zuhause"</string>
+    <string name="menu_favourites">" der Favorit"</string>
+    <string name="menu_profile">" Profil"</string>
+    <string name="tab_now_playing">" Läuft gerade"</string>
+    <string name="tab_upcoming">" Bevorstehende"</string>
+    <string name="view_details"><u>" Details anzeigen"</u></string>
+    <string name="edit">" Bearbeiten"</string>
+    <string name="save">" speichern"</string>
+    <string name="unknown_key">" Unbekannter Schlüssel"</string>
+    <string name="total_votes">" Gesamte stimmen"</string>
+    <string name="average_votes">" Durchschnittliche Stimmen"</string>
+    <string name="action_settings">" die Einstellungen"</string>
+    <string name="shared_from">----Geteilt von----</string>
+    <string name="error_connecting_to_server">" Fehler bei der Verbindung zum Server"</string>
+    <string name="retry">Wiederholen</string>
+    <string name="loading">" Wird geladen..."</string>
+    <string name="nav_header_desc">" Navigationsheader"</string>
+    <string name="movie_added_to_favourites">" Film zu Favoriten hinzugefügt"</string>
+    <string name="movie_removed_from_favourites">" Film aus Favoriten entfernt"</string>
+    <string name="movie_already_added_to_favourite">" Der Film wurde bereits zum Favoriten hinzugefügt"</string>
+    <string name="you_are_yet_to_favourite_any_movie_npress_the_heart_icon_to_favourite_a_movie">" Sie müssen noch einen Film favorisieren. Drücken Sie auf das Herzsymbol, um einen Film zu favorisieren"</string>
+</resources>
