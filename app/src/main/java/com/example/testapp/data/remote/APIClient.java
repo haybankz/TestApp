@@ -24,7 +24,7 @@ public class APIClient {
     private static Retrofit getClient() {
 
         logging = new HttpLoggingInterceptor();
-        logging.setLevel(HttpLoggingInterceptor.Level.BODY);
+//        logging.setLevel(HttpLoggingInterceptor.Level.BODY);
 
         httpClient = new OkHttpClient.Builder();
         httpClient.writeTimeout(50, TimeUnit.SECONDS); // set write timeout time to 50seconds
@@ -32,7 +32,7 @@ public class APIClient {
         httpClient.connectTimeout(30, TimeUnit.SECONDS);    // set connect timeout time to 50seconds
 
         httpClient.retryOnConnectionFailure(false);     //set retryOnConnectionFailure to false, so that the client does not repeat failed requests
-        httpClient.addInterceptor(logging);
+//        httpClient.addInterceptor(logging);
         OkHttpClient client = httpClient.build();
 
         return new Retrofit.Builder()
